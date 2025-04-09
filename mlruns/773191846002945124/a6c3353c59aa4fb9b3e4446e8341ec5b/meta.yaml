@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/773191846002945124/a6c3353c59aa4fb9b3e4446e8341ec5b/artifacts
+end_time: 1744203968483
+entry_point_name: ''
+experiment_id: '773191846002945124'
+lifecycle_stage: active
+run_id: a6c3353c59aa4fb9b3e4446e8341ec5b
+run_name: powerful-worm-497
+run_uuid: a6c3353c59aa4fb9b3e4446e8341ec5b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744203960062
+status: 3
+tags: []
+user_id: Admin

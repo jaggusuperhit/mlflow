@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/773191846002945124/ed7cccb66c1a4e948d1cd8fbc782cd9f/artifacts
+end_time: 1744208205165
+entry_point_name: ''
+experiment_id: '773191846002945124'
+lifecycle_stage: active
+run_id: ed7cccb66c1a4e948d1cd8fbc782cd9f
+run_name: respected-sloth-203
+run_uuid: ed7cccb66c1a4e948d1cd8fbc782cd9f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744208198134
+status: 3
+tags: []
+user_id: Admin

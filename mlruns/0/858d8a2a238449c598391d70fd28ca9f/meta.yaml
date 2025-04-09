@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ML-Ops/mlflow/mlruns/0/858d8a2a238449c598391d70fd28ca9f/artifacts
+end_time: 1744181526240
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 858d8a2a238449c598391d70fd28ca9f
+run_name: calm-kit-663
+run_uuid: 858d8a2a238449c598391d70fd28ca9f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744181525708
+status: 3
+tags: []
+user_id: Admin

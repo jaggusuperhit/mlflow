@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ML-Ops/mlflow/mlruns/0/566f4ce66f044656a2c8fab1f0afddc0/artifacts
+end_time: 1744202099012
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 566f4ce66f044656a2c8fab1f0afddc0
+run_name: sincere-mule-685
+run_uuid: 566f4ce66f044656a2c8fab1f0afddc0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744202098062
+status: 3
+tags: []
+user_id: Admin

@@ -1,0 +1,28 @@
+MLflow is a popular open-source platform for managing the end-to-end machine learning lifecycle. With MLflow, you can track and log various parameters to monitor and compare your model experiments. Here are some common parameters you can log and track using MLflow:
+Metrics
+Loss functions: Log loss values during training and validation, such as mean squared error (MSE), mean absolute error (MAE), cross-entropy loss, etc.
+Evaluation metrics: Track metrics like accuracy, precision, recall, F1-score, ROC-AUC, mean average precision (MAP), etc.
+Custom metrics: Log custom metrics specific to your problem or domain.
+Parameters
+Model hyperparameters: Track hyperparameters like learning rate, batch size, number of epochs, regularization strength, etc.
+Data preprocessing parameters: Log parameters related to data preprocessing, such as normalization, feature scaling, encoding schemes, etc.
+Artifacts
+Model weights: Store and version model weights for later use or comparison.
+Data: Log datasets, data splits, or other relevant data artifacts.
+Visualizations: Store visualizations like plots, charts, or images to help understand model performance.
+Tags and Annotations
+Experiment tags: Add tags to experiments to categorize or group related runs.
+Run annotations: Add notes or comments to individual runs to describe changes or observations.
+System Metrics
+Compute resources: Track CPU and memory usage, GPU utilization, or other system metrics.
+Training time: Log the time taken for each experiment or run.
+Other
+Git commit hashes: Track the Git commit hash associated with each experiment or run.
+Environment information: Log information about the environment, such as library versions, Python version, or operating system.
+By tracking these parameters, you can use MLflow to:
+Compare experiment results
+Identify trends and correlations
+Reproduce experiments
+Share results with others
+Improve model performance over time
+MLflow provides a Python API, as well as integrations with popular libraries like scikit-learn, TensorFlow, and PyTorch, making it easy to log and track these parameters in your machine learning projects.

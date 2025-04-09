@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ML-Ops/mlflow/mlruns/0/a4aa63e04cf840088d85ffe2da1326f3/artifacts
+end_time: 1744179466558
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a4aa63e04cf840088d85ffe2da1326f3
+run_name: auspicious-foal-882
+run_uuid: a4aa63e04cf840088d85ffe2da1326f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744179466405
+status: 3
+tags: []
+user_id: Admin

@@ -1,0 +1,8 @@
+# python -m venv mlflow
+# .\mlflow\Scripts\activate  # Activate the environment
+
+mlflow>=2.0.0
+scikit-learn>=1.0.0
+matplotlib>=3.0.0
+seaborn>=0.11.0
+dagshub>=0.1.0
