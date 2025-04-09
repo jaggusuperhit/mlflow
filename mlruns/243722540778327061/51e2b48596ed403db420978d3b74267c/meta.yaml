@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ML-Ops/mlflow/mlruns/243722540778327061/51e2b48596ed403db420978d3b74267c/artifacts
+end_time: 1744219459120
+entry_point_name: ''
+experiment_id: '243722540778327061'
+lifecycle_stage: active
+run_id: 51e2b48596ed403db420978d3b74267c
+run_name: valuable-sheep-296
+run_uuid: 51e2b48596ed403db420978d3b74267c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744219459023
+status: 3
+tags: []
+user_id: Admin

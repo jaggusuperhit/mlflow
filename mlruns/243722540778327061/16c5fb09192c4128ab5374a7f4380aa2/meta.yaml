@@ -1,0 +1,16 @@
+artifact_uri: file:///D:/ML-Ops/mlflow/mlruns/243722540778327061/16c5fb09192c4128ab5374a7f4380aa2/artifacts
+deleted_time: 1744224059485
+end_time: 1744219279000
+entry_point_name: ''
+experiment_id: '243722540778327061'
+lifecycle_stage: deleted
+run_id: 16c5fb09192c4128ab5374a7f4380aa2
+run_name: selective-ant-344
+run_uuid: 16c5fb09192c4128ab5374a7f4380aa2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744219271725
+status: 4
+tags: []
+user_id: Admin

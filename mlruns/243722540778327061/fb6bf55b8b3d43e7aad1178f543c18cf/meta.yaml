@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ML-Ops/mlflow/mlruns/243722540778327061/fb6bf55b8b3d43e7aad1178f543c18cf/artifacts
+end_time: 1744219458731
+entry_point_name: ''
+experiment_id: '243722540778327061'
+lifecycle_stage: active
+run_id: fb6bf55b8b3d43e7aad1178f543c18cf
+run_name: unique-skunk-925
+run_uuid: fb6bf55b8b3d43e7aad1178f543c18cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744219458630
+status: 3
+tags: []
+user_id: Admin
