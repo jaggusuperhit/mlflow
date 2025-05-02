@@ -1,69 +1,177 @@
-# MLflow Project
+# Wine Quality Prediction - MLOps Project
 
 ## Overview
 
-This project demonstrates MLOps practices using MLflow for experiment tracking, model registry, and deployment.
+This project demonstrates MLOps best practices for a wine quality prediction model. It includes:
 
-## Workflows
+- Modular, production-grade code structure
+- Data ingestion, validation, and transformation pipeline
+- Model training and evaluation
+- MLflow integration for experiment tracking
+- RESTful API using FastAPI
+- Docker containerization
+- Unit testing
 
-1. Update config.yaml
-2. Update schema.yaml
-3. Update params.yaml
-4. Update the entity
-5. Update the configuration manager in src config
-6. Update the components
-7. Update the pipeline
-8. Update the main.py
-9. Update the app.py
+## Project Structure
 
-## How to run?
-
-### STEPS:
-
-Clone the repository:
-
-```bash
-https://github.com/jaggusuperhit/MLflow.git
+```
+├── .dockerignore              # Files to exclude from Docker build
+├── .env                       # Environment variables (not in git)
+├── .env.example               # Example environment variables
+├── .gitignore                 # Files to exclude from git
+├── Dockerfile                 # Docker configuration
+├── README.md                  # Project documentation
+├── app.py                     # FastAPI application
+├── config/                    # Configuration files
+│   ├── config.yaml            # Main configuration
+│   └── schema.yaml            # Data schema definition
+├── main.py                    # Main training pipeline
+├── params.yaml                # Model hyperparameters
+├── pytest.ini                 # Pytest configuration
+├── requirements.txt           # Project dependencies
+├── research/                  # Jupyter notebooks for research
+├── setup.py                   # Package setup
+├── src/                       # Source code
+│   └── mlProject/             # Main package
+│       ├── __init__.py        # Package initialization
+│       ├── components/        # Pipeline components
+│       ├── config/            # Configuration management
+│       ├── constants/         # Constants and paths
+│       ├── entity/            # Data classes
+│       ├── pipeline/          # Pipeline orchestration
+│       └── utils/             # Utility functions
+└── tests/                     # Unit and integration tests
+    └── test_model_prediction.py  # Tests for prediction component
 ```
 
-### STEP 01- Create a conda environment after opening the repository
+## Installation
+
+### Option 1: Local Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/jaggusuperhit/MLflow.git
+   cd MLflow
+   ```
+
+2. Create and activate a virtual environment:
+
+   ```bash
+   python -m venv venv
+   # On Windows
+   venv\Scripts\activate
+   # On Linux/Mac
+   source venv/bin/activate
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Set up environment variables:
+   ```bash
+   # Copy example env file and modify with your credentials
+   cp .env.example .env
+   # Edit .env with your preferred editor
+   ```
+
+### Option 2: Using Docker
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/jaggusuperhit/MLflow.git
+   cd MLflow
+   ```
+
+2. Build the Docker image:
+
+   ```bash
+   docker build -t wine-quality-prediction .
+   ```
+
+3. Run the Docker container:
+   ```bash
+   docker run -p 8000:8000 --env-file .env wine-quality-prediction
+   ```
+
+## Usage
+
+### Running the Training Pipeline
+
+To train the model and track with MLflow:
 
 ```bash
-conda create -n mlops python=3.8 -y
+python main.py
 ```
+
+This will:
+
+1. Ingest the wine quality dataset
+2. Validate the data schema
+3. Perform data transformations
+4. Train an ElasticNet model
+5. Evaluate the model
+6. Log metrics and the model to MLflow
+
+### Using the API
+
+Start the API server:
 
 ```bash
-conda activate mlops
+uvicorn app:app --reload --host 0.0.0.0 --port 8000
 ```
 
-### STEP 02- install the required packages
+The API will be available at http://localhost:8000 with the following endpoints:
+
+- `GET /`: Health check
+- `GET /docs`: Interactive API documentation (Swagger UI)
+- `POST /predict`: Make a prediction for a single wine sample
+- `POST /batch-predict`: Make predictions for multiple wine samples
+
+### Example API Request
 
 ```bash
-pip install -r requirements.txt
+curl -X POST "http://localhost:8000/predict" \
+     -H "Content-Type: application/json" \
+     -d '{
+           "fixed_acidity": 7.4,
+           "volatile_acidity": 0.7,
+           "citric_acid": 0.0,
+           "residual_sugar": 1.9,
+           "chlorides": 0.076,
+           "free_sulfur_dioxide": 11.0,
+           "total_sulfur_dioxide": 34.0,
+           "density": 0.9978,
+           "pH": 3.51,
+           "sulphates": 0.56,
+           "alcohol": 9.4
+         }'
 ```
 
-```bash
-# Finally, run the app
-python app.py
-```
+## MLflow Integration
 
-Now, let's go through the code and see how it works.
-
-```bash
-Open up your local host and port
-```
-
-### MLflow
-
-[Documentation](https://www.mlflow.org/docs/latest/index.html)
-
-### cmd
-
-- mlflow ui
+This project uses MLflow for experiment tracking and model registry. The model training pipeline automatically logs parameters, metrics, and the model to MLflow.
 
 ### DagHub Integration
 
-[dagshub](https://dagshub.com/)
+The project is configured to use DagHub as the MLflow tracking server. To set up DagHub:
+
+1. Create an account on [DagHub](https://dagshub.com/)
+2. Create a new repository
+3. Get your authentication token
+4. Set environment variables:
+
+```bash
+export MLFLOW_TRACKING_URI=https://dagshub.com/jaggusuperhit/MLflow.mlflow
+export MLFLOW_TRACKING_USERNAME=jaggusuperhit
+export MLFLOW_TRACKING_PASSWORD=your_token
+```
+
+Or use the Python API:
 
 ```python
 import dagshub
@@ -71,13 +179,41 @@ dagshub.init(repo_owner='jaggusuperhit', repo_name='MLflow', mlflow=True)
 
 import mlflow
 with mlflow.start_run():
-    mlflow.log_param('parameter name', 'value')
-    mlflow.log_metric('metric name', 1)
+    mlflow.log_param('parameter_name', value)
+    mlflow.log_metric('metric_name', value)
+    mlflow.sklearn.log_model(model, "model")
 ```
 
-Run this to export as env variables:
+## Testing
+
+Run tests with pytest:
 
 ```bash
-export MLFLOW_TRACKING_URI=https://dagshub.com/jaggusuperhit/MLflow
-export MLFLOW_TRACKING_USERNAME=jaggusuperhit
+pytest
 ```
+
+For test coverage:
+
+```bash
+pytest --cov=src --cov-report=html
+```
+
+## Project Workflow
+
+1. Data Ingestion: Download and extract the wine quality dataset
+2. Data Validation: Validate the schema of the dataset
+3. Data Transformation: Preprocess the data for model training
+4. Model Training: Train an ElasticNet regression model
+5. Model Evaluation: Evaluate the model on test data and log metrics to MLflow
+6. Model Serving: Serve the model via a RESTful API
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+For questions or feedback, please contact:
+
+- Email: jagtapsuraj636@gmail.com
+- GitHub: [jaggusuperhit](https://github.com/jaggusuperhit)
