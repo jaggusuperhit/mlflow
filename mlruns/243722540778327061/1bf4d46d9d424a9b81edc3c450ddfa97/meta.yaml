@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ML-Ops/mlflow/mlruns/243722540778327061/1bf4d46d9d424a9b81edc3c450ddfa97/artifacts
+end_time: 1744219470742
+entry_point_name: ''
+experiment_id: '243722540778327061'
+lifecycle_stage: active
+run_id: 1bf4d46d9d424a9b81edc3c450ddfa97
+run_name: nimble-gnat-819
+run_uuid: 1bf4d46d9d424a9b81edc3c450ddfa97
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744219451199
+status: 3
+tags: []
+user_id: Admin

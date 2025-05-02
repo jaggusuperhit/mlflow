@@ -1,15 +1,28 @@
-pandas
-mlflow==2.2.2
-notebook
-numpy
-scikit-learn
-matplotlib
+# Core dependencies
+pandas>=1.0.0
+numpy>=1.20.0
+scikit-learn>=1.0.0
+matplotlib>=3.0.0
+seaborn>=0.11.0
+
+# MLflow and tracking
+mlflow>=2.15.1
+dagshub>=0.1.0
+
+# Project utilities
 python-box==6.0.2
-PyYAML
-tqdm
+PyYAML>=6.0
+tqdm>=4.64.0
 ensure==1.0.2
-joblib
-types-pyYAML
-Flask
-Flask-Cors
+joblib>=1.1.0
+types-pyYAML>=6.0.0
+
+# Web application
+Flask>=2.0.0
+Flask-Cors>=3.0.0
+
+# Development
+notebook>=6.0.0
+
+# Install the package in development mode
 -e .

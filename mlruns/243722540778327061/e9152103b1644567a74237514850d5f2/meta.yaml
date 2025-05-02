@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ML-Ops/mlflow/mlruns/243722540778327061/e9152103b1644567a74237514850d5f2/artifacts
+end_time: 1744219459672
+entry_point_name: ''
+experiment_id: '243722540778327061'
+lifecycle_stage: active
+run_id: e9152103b1644567a74237514850d5f2
+run_name: abundant-asp-174
+run_uuid: e9152103b1644567a74237514850d5f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744219459577
+status: 3
+tags: []
+user_id: Admin

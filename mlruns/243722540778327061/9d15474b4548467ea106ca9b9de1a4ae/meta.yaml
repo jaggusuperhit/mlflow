@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ML-Ops/mlflow/mlruns/243722540778327061/9d15474b4548467ea106ca9b9de1a4ae/artifacts
+end_time: 1744219459358
+entry_point_name: ''
+experiment_id: '243722540778327061'
+lifecycle_stage: active
+run_id: 9d15474b4548467ea106ca9b9de1a4ae
+run_name: thoughtful-fox-656
+run_uuid: 9d15474b4548467ea106ca9b9de1a4ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744219459276
+status: 3
+tags: []
+user_id: Admin

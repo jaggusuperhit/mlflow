@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ML-Ops/mlflow/mlruns/243722540778327061/ff6453ddc51d4ec48cf05c67394777ef/artifacts
+end_time: 1744219458609
+entry_point_name: ''
+experiment_id: '243722540778327061'
+lifecycle_stage: active
+run_id: ff6453ddc51d4ec48cf05c67394777ef
+run_name: respected-worm-690
+run_uuid: ff6453ddc51d4ec48cf05c67394777ef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744219458495
+status: 3
+tags: []
+user_id: Admin

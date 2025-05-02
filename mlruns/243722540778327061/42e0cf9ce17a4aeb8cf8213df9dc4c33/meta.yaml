@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ML-Ops/mlflow/mlruns/243722540778327061/42e0cf9ce17a4aeb8cf8213df9dc4c33/artifacts
+end_time: 1744219459005
+entry_point_name: ''
+experiment_id: '243722540778327061'
+lifecycle_stage: active
+run_id: 42e0cf9ce17a4aeb8cf8213df9dc4c33
+run_name: bald-squid-906
+run_uuid: 42e0cf9ce17a4aeb8cf8213df9dc4c33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744219458912
+status: 3
+tags: []
+user_id: Admin

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ML-Ops/mlflow/mlruns/243722540778327061/4a9944e341594d238e8227389302c128/artifacts
+end_time: 1744219459566
+entry_point_name: ''
+experiment_id: '243722540778327061'
+lifecycle_stage: active
+run_id: 4a9944e341594d238e8227389302c128
+run_name: rebellious-loon-910
+run_uuid: 4a9944e341594d238e8227389302c128
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744219459467
+status: 3
+tags: []
+user_id: Admin

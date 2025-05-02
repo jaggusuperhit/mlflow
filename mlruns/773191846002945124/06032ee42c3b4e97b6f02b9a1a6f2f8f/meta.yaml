@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/773191846002945124/06032ee42c3b4e97b6f02b9a1a6f2f8f/artifacts
+deleted_time: 1744204728566
+end_time: 1744203606099
+entry_point_name: ''
+experiment_id: '773191846002945124'
+lifecycle_stage: deleted
+run_id: 06032ee42c3b4e97b6f02b9a1a6f2f8f
+run_name: gifted-bee-422
+run_uuid: 06032ee42c3b4e97b6f02b9a1a6f2f8f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744203605345
+status: 4
+tags: []
+user_id: Admin

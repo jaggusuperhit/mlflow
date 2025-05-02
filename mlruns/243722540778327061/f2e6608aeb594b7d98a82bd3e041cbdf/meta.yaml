@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ML-Ops/mlflow/mlruns/243722540778327061/f2e6608aeb594b7d98a82bd3e041cbdf/artifacts
+end_time: 1744219458810
+entry_point_name: ''
+experiment_id: '243722540778327061'
+lifecycle_stage: active
+run_id: f2e6608aeb594b7d98a82bd3e041cbdf
+run_name: wistful-gnu-608
+run_uuid: f2e6608aeb594b7d98a82bd3e041cbdf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744219458747
+status: 3
+tags: []
+user_id: Admin

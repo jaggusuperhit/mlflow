@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/ML-Ops/mlflow/mlruns/243722540778327061/01c23cd9759b4a2f80c6129130f9930a/artifacts
+end_time: 1744219458470
+entry_point_name: ''
+experiment_id: '243722540778327061'
+lifecycle_stage: active
+run_id: 01c23cd9759b4a2f80c6129130f9930a
+run_name: glamorous-sponge-757
+run_uuid: 01c23cd9759b4a2f80c6129130f9930a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744219458320
+status: 3
+tags: []
+user_id: Admin
