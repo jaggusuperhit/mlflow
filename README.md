@@ -184,6 +184,28 @@ with mlflow.start_run():
     mlflow.sklearn.log_model(model, "model")
 ```
 
+## CI/CD Pipeline
+
+This project uses GitHub Actions for continuous integration and deployment. The pipeline:
+
+1. Runs tests and generates coverage reports
+2. Builds and pushes a Docker image to DockerHub
+3. Deploys the application (currently a placeholder)
+
+For more details on setting up the CI/CD pipeline, see [CICD_SETUP.md](CICD_SETUP.md).
+
+### Testing the CI/CD Pipeline Locally
+
+You can test the GitHub Actions workflow locally using [act](https://github.com/nektos/act):
+
+```bash
+# On Linux/Mac
+./test_github_actions.sh
+
+# On Windows
+./test_github_actions.ps1
+```
+
 ## Testing
 
 Run tests with pytest:
